@@ -28,6 +28,11 @@
        state: started
     when: ansible_os_family =="RedHat"
 
+  - name: i want to start websever1 on ansible RedHat nodes ( service httpd start)
+    service:
+       name: "{{mywebpackonredhat}}"
+       state: started
+    when: ansible_os_family =="RedHat"
 
 
 
