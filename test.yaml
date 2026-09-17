@@ -8,7 +8,7 @@
       name: apache2
       state: present 
     when: ansible_os_family=="Debian"
-    
+
   - name: i want to start webserver on ansible Debian node task02 (service apache2 start )
     service:
       name: apache2
@@ -21,7 +21,7 @@
       state: present 
     when: ansible_os_family=="RedHat"
 
-    - name: i want to start webserver on ansible RedHat node task04 (apt-get install httpd -y )
+  - name: i want to start webserver on ansible RedHat node task04 (apt-get install httpd -y )
     service:
       name: httpd
       state: started 
