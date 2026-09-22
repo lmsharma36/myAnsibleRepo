@@ -1,0 +1,23 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks: 
+  - include_tasks: myfile.yml
+  - name: intall webserver on ubuntu
+    apt:
+      name: apache2 
+      state: present
+#  - name: copy a static file on node side
+#    copy:
+ #      src: mystaticfile
+  #     dest: /home/maha/myfolder 
+#  - name: download remote file from web 
+ #   get_url:
+  #      url:  https://updates.jenkins.io/download/war/2.582/jenkins.war
+   #     dest: /home/maha/myfolder/jenkins.war
+    #    force_basic_auth: yes
+
+  #- name: copy index.j2 file into node side index.html file
+   # template:
+    #    src: myindex.j2
+     #   dest: /var/www/html/index.html
