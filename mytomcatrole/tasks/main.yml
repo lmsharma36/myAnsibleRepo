@@ -2,7 +2,7 @@
 ---
 # tasks file for mytomcatrole
 - include_tasks: installjava.yml
-- include_tasks: downlaod.yml
+- include_tasks: download.yml
 - include_tasks: usergroup.yml
 - include_tasks: permisions.yml
 - include_tasks: tomcatservice.yml
