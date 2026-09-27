@@ -2,4 +2,4 @@
 - name: change own on tomcat folder
   command: "sudo chown -R tomcat: /opt/tomcat"
 - name: change execute permissions
-  cmd: "sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'"
+  shell: "sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'"
